@@ -7,3 +7,7 @@ This line is added to practice the Git workflow.
 ## Practice Step 1
 
 This commit adds a short section for the first practice change.
+
+## Practice Step 2
+
+This commit records the second independent README update.
