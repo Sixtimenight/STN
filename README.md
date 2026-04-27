@@ -11,3 +11,7 @@ This commit adds a short section for the first practice change.
 ## Practice Step 2
 
 This commit records the second independent README update.
+
+## Pull Test
+
+This line is used to verify pull synchronization from GitHub.
