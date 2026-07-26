@@ -1,32 +1,25 @@
 # STN Projects
 
-个人 AI、自动化与 Web3 实践项目仓库。
+这里收录我的 AI、自动化与 Web3 实践项目。每个项目都放在 `projects/` 下，并独立提供说明、源代码和运行方式。
 
-## Projects
+## 项目
 
-### Agent Hub
+| 项目 | 简介 | 技术 |
+| --- | --- | --- |
+| [Agent Hub](projects/agent-hub/README.md) | 带人工审批流程的桌面端多 Agent 任务控制台原型 | Python、LangGraph、Tkinter、Codex CLI |
 
-使用 Python、LangGraph 和 Tkinter 构建的桌面端多 Agent 任务审批原型。Codex 先生成结构化计划，用户可以在任务交给执行节点之前查看、修改、批准或拒绝。
+## 仓库结构
 
-- [项目说明](agent-hub/README.md)
-- [源代码](agent-hub/app.py)
+```text
+STN/
+├── README.md
+└── projects/
+    └── agent-hub/
+        ├── README.md
+        ├── app.py
+        ├── planner-schema.json
+        ├── requirements.txt
+        └── .gitignore
+```
 
-当前版本已完成规划和人工审批流程，真实执行节点适配器仍在开发中。
-
-## Git workflow practice
-
-以下内容保留自早期 Git 工作流练习。
-
-This line is added to practice the Git workflow.
-
-## Practice Step 1
-
-This commit adds a short section for the first practice change.
-
-## Practice Step 2
-
-This commit records the second independent README update.
-
-## Pull Test
-
-This line is used to verify pull synchronization from GitHub.
+项目仍处于持续迭代阶段。各子项目的完成情况和后续计划以其 README 为准。
