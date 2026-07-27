@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "对任务的简明理解"
+    },
+    "target": {
+      "type": "string",
+      "enum": ["claude", "workbuddy"],
+      "description": "最适合执行任务的节点"
+    },
+    "target_reason": {
+      "type": "string",
+      "description": "选择该执行节点的可审计理由"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "建议执行步骤"
+    },
+    "success_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "完成任务的验收标准"
+    },
+    "execution_prompt": {
+      "type": "string",
+      "description": "准备发送给执行节点的完整指令"
+    },
+    "needs_user_input": {
+      "type": "boolean",
+      "description": "执行前是否仍需要用户补充关键信息"
+    },
+    "question": {
+      "type": "string",
+      "description": "如果需要用户输入，给出一个简短问题；否则为空字符串"
+    }
+  },
+  "required": [
+    "summary",
+    "target",
+    "target_reason",
+    "steps",
+    "success_criteria",
+    "execution_prompt",
+    "needs_user_input",
+    "question"
+  ],
+  "additionalProperties": false
+}
